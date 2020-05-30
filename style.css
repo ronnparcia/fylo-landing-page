@@ -86,20 +86,24 @@ section {
     color: var(--very-dark-blue);
 }
 section#stay-productive {
-    margin-top: 40px;
+    margin-top: 80px;
+    padding-top: 40px;
     position: relative;
     background-color: var(--light-grayish-blue);
 }
 section#stay-productive::before {
     position: absolute;
-    top: -50px;
+    top: -100px;
     left: 0;
+    right: 0;
     display: block;
     content: '';
     background-image: url('images/bg-curve-mobile.svg');
     background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 50px;
+    height: 100px;
 }
 .section__heading {
     font-size: 16px;
@@ -261,7 +265,6 @@ button {
     }
     section#stay-productive::before {
         background-image: url('images/bg-curve-desktop.svg');
-        background-size: cover;
     }
 }
 
@@ -346,6 +349,9 @@ button {
     .testinomial__position {
         font-size: 10px;
     }
+    footer {
+        padding-bottom: 40px;
+    }
 }
 
 /* States */
@@ -362,4 +368,7 @@ button:hover {
 }
 section#stay-productive a:hover {
     padding-right: 30px;
+}
+footer a:hover {
+    opacity: 0.6;
 }
